@@ -3,7 +3,7 @@
 ## Environment Variables Required:
 
 ```
-BACKEND_URL=https://your-railway-app.railway.app
+BACKEND_URL=https://your-service-name.onrender.com
 ```
 
 ## Deployment Steps:

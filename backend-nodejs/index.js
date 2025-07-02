@@ -32,6 +32,31 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Welcome route
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to Envest Backend API',
+    version: '1.0.0',
+    status: 'running',
+    endpoints: {
+      health: '/api/health',
+      news: {
+        general: 'GET /api/news/general',
+        filtered: 'POST /api/news/filtered',
+        portfolioSummary: 'POST /api/news/portfolio-summary',
+        search: 'GET /api/news/search'
+      },
+      ai: {
+        single: 'POST /api/analyze/single',
+        portfolio: 'POST /api/analyze/portfolio',
+        quickSentiment: 'POST /api/analyze/quick-sentiment',
+        stock: 'POST /api/analyze/stock'
+      }
+    },
+    documentation: 'API endpoints for Indian financial news curation and AI analysis'
+  });
+});
+
 // Routes
 app.use('/api/news', newsRoutes);
 app.use('/api/analyze', aiAnalysisRoutes);
