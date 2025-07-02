@@ -1,0 +1,104 @@
+# Root level gitignore for Insightfolio project
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*/.env
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
+
+# Build outputs
+build/
+dist/
+out/
+.next/
+*/.next/
+*/build/
+*/dist/
+*/out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Platform specific
+.vercel/
+.railway/
+
+# Temporary folders
+tmp/
+temp/
+*/tmp/
+*/temp/
+
+# Optional caches
+.npm
+.yarn-integrity
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Uploads
+uploads/
+files/
+
+# Backup files
+*.backup
+*.bak
+
+# Package manager lock files (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock 
